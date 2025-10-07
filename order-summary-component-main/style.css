@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --Blue-100: hsl(225, 100%, 94%);
+    --Blue-700: hsl(245, 75%, 52%);
+    --Blue-more-transparent: hsla(225, 100%, 94%, 0.623);
+    --Blue-50: hsl(228, 100%, 98%);
+    --Gray-600: hsl(224, 23%, 55%);
+    --Blue-950: hsl(223, 47%, 23%);
+    --Blue-hover: hsla(245, 75%, 52%, 0.674)
+;
+    -fz: 16px;
+
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+}
+
+body {
+    background-color: var(--Blue-100);
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 100%;
+    max-width: 390px;
+    background-color: var(--Blue-50);
+    border-radius: 15px;
+    box-shadow: 2px 5px 20px rgba(52, 52, 210, 0.313) ;
+}
+
+.img-div {
+    background-image: url("images/illustration-hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 160px;
+    border-radius: 15px 15px 0 0;
+}
+
+section {
+    padding: 25px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 15px;
+}
+
+.order h2 {
+    color: var(--Blue-950);
+    font-weight: var(--fw-bolder);
+}
+
+.order p{
+    text-align: center;
+    line-height: 1.5;
+    color: var(--Gray-600);
+    font-weight: var(--fw-bold);
+}
+
+.contain-annual-plan {
+    background-color: var(--Blue-more-transparent);
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;  
+}
+
+.small-annual {
+    display: grid;
+    gap: .3rem;
+    margin-left: 15px;
+}
+
+.small-annual .annual-plan {
+    color: var(--Blue-950);
+    font-weight: var(--fw-bolder);
+}
+
+.small-annual .result-annual-plan {
+    color: var(--Gray-600);
+}
+
+a {
+    margin-left: 75px;
+    color: var(--Blue-700);
+    font-weight: var(--fw-bold);
+}
+
+.payement {
+    text-align: center;
+    margin: 30px 0;
+    background-color: var(--Blue-700);
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--Blue-100);
+    font-weight: var(--fw-bold);
+    box-shadow: 1px 5px 15px rgb(148, 148, 207);
+    transition: .3s ease;
+}
+
+a:hover {
+    color: var(--Blue-hover);
+    text-decoration: none;
+}
+
+.payement:hover{
+    background-color: var(--Blue-hover);
+    cursor: pointer;
+}
+
+.cancel-order {
+    text-align: center;
+    color: var(--Gray-600);
+    font-weight: var(--fw-bold);
+}
+
+.cancel-order:hover {
+    cursor: pointer;
+    color: var(--Blue-950);
+    font-weight: var(--fw-bolder);
+}
